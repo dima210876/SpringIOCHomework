@@ -1,10 +1,12 @@
 package repository.impl;
 
 import model.Movie;
+import org.springframework.stereotype.Repository;
 import repository.MovieRepository;
 
 import java.util.List;
 
+@Repository
 public class DbMovieRepository implements MovieRepository
 {
     private List<Movie> dbMovies = List.of(
